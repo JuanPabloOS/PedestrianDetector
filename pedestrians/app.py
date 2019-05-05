@@ -1,6 +1,7 @@
 from ventana import *
 from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog
 from Detector import passImg
+
 #pyuic5 -x ventana.ui -o ventana_ui.py
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, *args, **kwargs):
