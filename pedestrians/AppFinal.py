@@ -18,13 +18,7 @@ class Window(Frame):
         
         self.cantidadPersonasText = Label(self,text="Personas encontradas:",font=("Arial Bold", 12)).grid(row=2,column=2)                
         self.cantidadPersonas=Label(self,text="0",font=("Arial Bold", 12)).grid(row=3,column=2)
-
-        # self.tituloImg1 = Label(self,text="Imagen Original",font=("Arial Bold", 12)).grid(row=6,column=1)
-        # self.load = Image.open("bg.jpg")
-        # self.render = ImageTk.PhotoImage(self.load)
-        # self.original = Label(self, image=self.render)
-        # self.original.image = self.render        
-        # self.original.grid(row=7,column=1)
+       
 
         self.tituloImg2 = Label(self,text="Imagen Resultado",font=("Arial Bold", 12)).grid(row=8,column=0)
         self.load = Image.open("bg2.jpg")
@@ -33,23 +27,6 @@ class Window(Frame):
         self.resultado.image = self.render        
         self.resultado.grid(row=7,column=2)
 
-    # def cargarOriginal(self, path="bg.jpg"):
-    #     self.original.image=""
-    #     self.load = cv2.imread(path)
-    #     self.load=cv2.cvtColor(self.load, cv2.COLOR_BGR2RGB)
-         
-    #     height, width, channels = self.load.shape
-    #     if(width>800 or height>800):
-    #         self.load=self.changeSize(self.load)
-        
-    #     self.load = Image.fromarray(self.load)
-    #     self.render = ImageTk.PhotoImage(self.load)
-    #     self.original = Label(self, image=self.render)
-    #     self.original.image = self.render        
-    #     self.original.grid(row=6,column=1)
-    #     imagenDibujada, personas = passImg(path)
-    #     self.cantidadPersonas=Label(self,text=str(personas),font=("Arial Bold", 12)).grid(row=3,column=2)
-    #     self.cargarResultado(imagenDibujada)
 
     def cargarResultado(self, image):
         self.resultado.image=""
